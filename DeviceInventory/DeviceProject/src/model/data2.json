@@ -1,0 +1,20 @@
+[
+        {
+        "deviceid": 1,
+        "devicename": "a",
+        "allocatedto": "alex",
+        "status": 1
+        },
+        {
+        "deviceid": 2,
+        "devicename": "b",
+        "allocatedto": "",
+        "status": 0     
+        },
+        {
+        "deviceid": 3,
+        "devicename": "c",
+        "allocatedto": "",
+        "status": 0     
+        }
+]

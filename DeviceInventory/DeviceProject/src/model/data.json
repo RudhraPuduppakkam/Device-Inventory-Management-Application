@@ -1,0 +1,20 @@
+[
+    {
+        "username": "alex@gmail.com",
+        "password": "alex",
+        "role" : "admin",
+        "sysid" : 1
+    },
+    {
+        "username": "johndoe@gmail.com",
+        "password": "johndoe",
+        "role" : "user",
+        "sysid" : 0
+    },
+    {
+        "username": "mercy@gmail.com",
+        "password": "mercy",
+        "role" : "user",
+        "sysid" : 0
+    }
+]

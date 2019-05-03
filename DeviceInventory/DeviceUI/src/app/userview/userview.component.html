@@ -1,0 +1,29 @@
+<div class="wrap">
+  <button class="button" (click)="sendRequest()">Request Device</button>
+</div>
+<br>
+<div class="wrap">
+  <button class="button" (click)="viewProfile()">View Profile</button>
+</div><br><br>
+    <div class="container" *ngIf="profile">
+      <div>
+    <table class="table table-bordered table-hover table-bg-dark">
+        <thead>
+          <tr *ngIf="a" colspan=3>
+            <th scope="col" class="text-center">User Name</th>
+            <th scope="col" class="text-center">Device Id</th>
+            <th scope="col" class="text-center">Device Name</th>
+            <th scope="col" class="text-center">System Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-center">{{a.allocatedto}}</td>
+            <td class="text-center">{{a.deviceid}}</td>
+            <td class="text-center">{{a.devicename}}</td>
+            <td class="text-center">{{a.status}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>

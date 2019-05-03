@@ -1,0 +1,63 @@
+<div>
+<div class="wrap">
+  <button class="button" (click)="allDetails()">Get Details</button>
+</div>
+
+<br>
+<div class="container">
+  <div>
+<table class="table table-bordered table-hover">
+    <thead>
+      <tr *ngIf="y">
+        <th scope="col" class="text-center">Allocated To</th>
+        <th scope="col" class="text-center">Device Id</th>
+        <th scope="col" class="text-center">Device Name</th>
+        <th scope="col" class="text-center">Deallocation</th>
+        <th scope="col" class="text-center">Reallocate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of y">
+        <td class="text-center">{{a.allocatedto}}</td>
+        <td class="text-center">{{a.deviceid}}</td>
+        <td class="text-center">{{a.devicename}}</td>
+        <td class="text-center"><button class = "btn btn-danger" (click)="locate(a.allocatedto, 1)">Deallocate</button></td>
+        <td class="text-center"><button class = "btn btn-warning" (click)="locate(a.allocatedto, 2)">Reallocate</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+
+<div>
+<div class="wrap">
+    <button class="button" (click)="viewRequests()">View Requests</button>
+  </div>
+  <br>
+<div class="container">
+  <div>
+<table class="table table-bordered table-hover" *ngIf="view && errorMessage==''">
+    <thead>
+      <tr *ngIf="z" colspan=3>
+        <th scope="col" class="text-center">Requests</th>
+        <th scope="col" class="text-center">Accepting</th>
+        <th scope="col" class="text-center">Rejecting</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let b of z">
+        <td class="text-center">{{b.username}}</td>
+        <td class="text-center"><button class = "btn btn-success" (click)="accept(b.username, 1)">Accept</button></td>
+        <td class="text-center"><button class = "btn btn-danger" (click)="accept(b.username, 2)">Reject</button></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+  
+  
+</div>
+<div *ngIf="errorMessage!=null && view" style="margin-left:510px;" class="text-danger">{{errorMessage}}</div>
+</div>
+</div>

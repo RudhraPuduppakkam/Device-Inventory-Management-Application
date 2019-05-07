@@ -3,10 +3,12 @@
 Steps to run the project:
 After opening the git link shared by me, you will find a file named Device-Inventory-Management-Application, to the right of it you can find a green button "Clone or Download", click it.
 If you download, you will get the folder on your system which should be opened using a editor, I have used VSC(Visual Studio Code).
-If you Clone it, you will get the poject in your git repository from where you will have a link which you have to copy and paste in your editor git clone to pull into your system.
+If you Clone it, you will get the poject in your git repository from where you will have a project link which you have to copy and paste in your editor git clone to pull into your system.
 Next step is only for when you download, so if you have cloned, ignore next step.
 After opening VSC, open the project folder in it by clicking File->Open Folder->*Select your project folder here*.
-Once you have successfully opened the project, go to the WS folder using the command cd *foldername* then go to the src folder using cd src, then use the command "node app.js" to run the back end.
+Navgate to back end WS folder by using command "cd *WS foldername*" then run command npm install, this gets us all the node modules required for the project.
+Similarly navigate to the front end UI folder by using command "cd *UI foldername*" and run command npm install to get all the node modules.
+Once you have successfully run the commands, go to the src folder using cd src, then use the command "node app.js" to run the back end.
 Repeat the above process to navigate to the front end folder i.e. UI folder in another terminal, once reached the src folder, use the command *ng serve --open*  to run the front end, i.e. UI part.
 After compiling, a browser window will open where you can see the application.
 
